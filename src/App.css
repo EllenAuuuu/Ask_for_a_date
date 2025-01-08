@@ -1,0 +1,16 @@
+.App {
+	text-align: center;
+	background-color: black; /* Black background */
+	color: white; /* Default text color */
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

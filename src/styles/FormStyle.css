@@ -1,0 +1,78 @@
+/* General reset and responsive adjustments */
+body {
+	background-color: black; /* Black background */
+	color: white; /* Default text color */
+	margin: 0;
+	font-family: "Jersey 15", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2vw; /* Font size relative to screen width */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh; /* Ensure it covers the full screen */
+	overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container for the login form */
+.Form {
+	text-align: center;
+	display: flex;
+	flex-direction: column; /* Stack elements vertically */
+	min-width: 300px; /* Minimum width for smaller devices */
+	max-width: 600px; /* Maximum width for larger screens */
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+	border-radius: 10px;
+	box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+	box-sizing: border-box;
+}
+
+/* Input fields styling */
+input {
+	background-color: #333; /* Dark background for inputs */
+	color: white; /* White text for inputs */
+	border: 5px solid white; /* Bold border for inputs */
+	border-radius: 5px;
+	font-size: 1.5vw; /* Font size relative to screen width */
+	padding: 10px;
+	margin: 15px 0; /* Space between inputs */
+	width: 100%; /* Take full width of the container */
+	box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+	background-color: #243e5a; /* Blue button */
+	color: white; /* White text for button */
+	border: none;
+	font-family: "Jersey 15", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5vw; /* Font size relative to screen width */
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background-color: #072648; /* Darker blue on hover */
+	transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+	body {
+		font-size: 4vw; /* Increase font size for smaller devices */
+	}
+
+	input,
+	button {
+		font-size: 4vw; /* Adjust input and button sizes */
+	}
+
+	.Form {
+		width: 90%; /* Take most of the screen width */
+	}
+}
